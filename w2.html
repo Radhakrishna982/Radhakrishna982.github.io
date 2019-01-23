@@ -1,0 +1,53 @@
+<!-- Write HTML code here -->
+<!DOCTYPE html> 
+<html> 
+    <head> 
+        <title>To-Do List</title>
+		<style>
+		body
+		{
+		background-color:#222621;
+		}
+		table, td {
+  border: 1px solid red;
+
+  width:760px;
+}
+
+
+		</style>
+	<center><h1 style = "color:green;width:60%;">TO-DO List</h1></center>	
+    </head> 
+     
+    <body> 
+	<center>
+	
+	
+	 <button  onclick = "tk()"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAMAAABlApw1AAAAM1BMVEX///8AAAB/f38GBgYWFhY4ODjc3NxnZ2cLCwsYGBj4+PgwMDB5eXn09PRkZGSqqqrR0dH2MDAyAAABN0lEQVR4nO3VW07DMBRFUdM8m0fT+Y8WIiF+4KNJey8GrT2CsxwrLkWSJEmSJEl6rsvbg11+e+nPPby/UsGB/VUKDu2vUHBwf3WCw/srE5zYX5Xg1P5swbmN5wMAAAAAAAAAAAAAqAcgSdLen3/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAC+1cTub8IBbSygDQd0sYAuHHCLBQzhgC0WsIUD1jFy/7iGA2LvUPwNKqUP/JE2fQKgLHGAJWN/meao/fOUAih90GN2TblAe/cQwfWetf/jGwTcojnt/Pem5cX/omZJuv9f9bcXvmjjkHr8n63b0LVPf4im7YYt4f2VJEmSJEnS/+odkzc0Dk7RU5UAAAAASUVORK5CYII=" height="18px"></img></button>
+	<input type="text" placeholder="Enter" size="117" id="hk">
+	
+	 <button  onclick = "rk()"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSb38p8oh3eAUrtg5RUN4DVxRGA9NqJ2g3-N0Hx6bVmNEycHeILng" height="18px"></img></button>
+<br><br><table id="pk">
+  
+  </table>	      
+
+		  </center> 
+            <script> 
+            function rk() {	
+			  var table = document.getElementById("pk");
+			  var row = table.insertRow(document.getElementById("pk").rows.length);
+			    var r1 = row.insertCell(0);
+				r1.innerHTML=document.getElementById("hk").value;
+				r1.style.color="white"; 
+				
+	
+            } 
+			function tk()
+			{
+			 var x = document.getElementById("pk");
+  x.deleteRow(0);
+  }
+            </script> 
+         		
+    </body> 
+</html>                    
